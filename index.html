@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <title>Conversor de Moedas</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+
+</head>
+
+<body>
+
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="index.html" class="logo">
+              <h4>coin conversion <img src="assets/images/pilha-de-moedas(1).png" alt=""></h4>
+            </a>
+            <ul class="nav">
+              <li class="scroll-to-section">
+                <div class="main-blue-button"><a href="#contact">Iniciar Conversão</a></div>
+              </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="info-stat">
+                      <h6>Euro:</h6>
+                      <h4>5,55 Real brasileiro</h4>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="info-stat">
+                      <h6>Dolar:</h6>
+                      <h4>5,37 Real brasileiro</h4>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="info-stat">
+                      <h6>Libra Esterlina</h6>
+                      <h4>6,42 Real brasileiro</h4>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <h2>Seu conversor de moedas gratuito!</h2>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="main-green-button scroll-to-section">
+                      <a href="#contact">Iniciar conversão</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/moeda.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              <div class="section-heading">
+                <h6>Converta agora!</h6>
+                <h2>Escolha dentre as <span>opções</span> e <em>converta</em> imediatamente as <span>moedas!</span></h2>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h5><label>Valor para conversão:</label></h5> </span><br>
+                  <input id="entrada" type="number" required>
+
+                  <select id="moedas" required>
+                    <option value='NULL'>Selecione</option>
+                    <option value='EUR-BRL'>Euro para real</option>
+                    <option value='USD-BRL'>Dólar para real</option>
+                    <option value='EUR-USD'>Euro para dólar</option>
+                    <option value='BRL-USD'>Real para dólar</option>
+                    <option value='BRL-EUR'>Real para euro</option>
+                    <option value='EUR-USD'>Euro para dólar</option>
+                    <option value='USD-EUR'>Dólar para euro</option>
+                  </select>
+                  <br>
+                  <br>
+                  <div class="main-green-button scroll-to-section">
+                    <button onclick="converter()">Converter</button>
+                  </div><br>
+                  <h5>Valor da conversão é: <span id="moeda-convertida"></span></h5>
+
+                </div>
+                <div class="col-lg-3">
+                  <div class="contact-info">
+                    <ul>
+                      <li>
+                        <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                          <img src="assets/images/dinheiro.png" alt="">
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
